@@ -1,0 +1,226 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Vibhu Yadav} \\ \vspace{1pt}
+    \small (603) 277-1125 $|$ \href{mailto:vib.yad@gmail.com}{\underline{vib.yad@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/vibyad}{\underline{linkedin.com/in/vibyad}} $|$
+    \href{https://github.com/vibhuyadav}{\underline{github.com/vibhuyadav}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dartmouth College}{Hanover, NH}
+      {Masters in Computer Science}{Sep 2013 -- May 2016}
+    \resumeSubheading
+      {Indraprastha University}{New Delhi, India}
+      {Bachelors in Computer Science and Engineering}{Aug. 2008 -- May 2012}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {ETS Engineer III}{Apr 2024 -- Present}
+      {Navy Federal Credit Union}{Washington, DC}
+      \resumeItemListStart
+        \resumeItem{Developing alerting and monitoring solutions for NFCU's mobile and web applications}
+        \resumeItem{Assisting teams in achieving cloud readiness through effective alerting and monitoring strategies}
+        \resumeItem{Collaborated with the Lending and Mortgage team to resolve mortgage payment issues to enhance user experience}
+        \resumeItem{Partnered with the development and VISA API teams to implement Cross Link for issuing temporary credit cards}
+        \resumeItem{Writing cloud infrastructure using Terraform}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Senior Site Reliability Engineer}{Apr 2022 -- Feb 2024}
+      {Newsela}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Achieved 75\% cost and time savings by \textbf{eliminating toil} and optimizing infrastructure provisioning}
+        \resumeItem{Improved our observability and system monitoring by tracking our \textbf{SLI} - latency, throughput, and error rates}
+        \resumeItem{Demonstrated exceptional responsiveness with 100\% \textbf{incident resolution}}
+        \resumeItem{Wrote extensive \textbf{Postmortem} reports and runbooks to avoid repeated failures and incidents}
+        \resumeItem{Successfully collaborated with the \textbf{Platform Data} team to implement robust CDC, ETL, and VPN solutions, bolstering data transfer reliability}
+        \resumeItem{Created \textbf{MLOps} platform with ML/AI team, enabling swift machine learning model deployment}
+        \resumeItem{Worked on the search team as an \textbf{embedded SRE} to recover them from \textbf{operational overload}}
+        \resumeItem{Deployed and maintained our \textbf{distributed systems} in production. This includes millions of articles, streaming videos, audio, assignments, and quizzes that kids will access on the platform}
+        \resumeItem{Cut AWS cloud \textbf{costs} by 30\% by optimizing scaling, compute, cache and databases }
+        \resumeItem{Fostered transparency and ownership by sharing \textbf{change management} responsibilities with other teams}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Senior Site Reliability Engineer}{Apr 2021 -- Apr 2022}
+      {Akoya}{Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Led large-scale FDX API \textbf{infrastructure deployment} and maintenance for 70\% of US bank accounts}
+        \resumeItem{Worked with engineering teams to \textbf{build automation suites} around production systems}
+        \resumeItem{Worked in setting up \textbf{cloud security} within AWS and kept us SOC2 compliant}
+        \resumeItem{Implemented\textbf{ dynamic code analysis} tool saving the company \$120,000 an year }
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {DevOps Engineer Tech Lead}{Aug 2018 -- Apr 2021}
+      {Extron}{Raleigh, NC}
+      \resumeItemListStart
+        \resumeItem{Collaborated with various Product and Technical teams to identify\textbf{ DevOps} blind spots and fix them}
+        \resumeItem{Provided \textbf{mentorship} to junior engineers}
+        \resumeItem{Eliminated toil by implementing and maintaining \textbf{CI/CD pipelines}}
+        \resumeItem{Developed bespoke tools for \textbf{monitoring}, \textbf{alerting}, \textbf{chatbots}, and \textbf{logging} and \textbf{configuration management}}
+      \resumeItemListEnd
+
+      % \resumeSubheading
+      % {Software Engineer}{Apr 2018 -- Aug 2018}
+      % {iPolarity}{Tampla, FL}
+      % \resumeItemListStart
+      %   \resumeItem{Worked on the Chatbot \textbf{backend} framework using NLP engines}
+      % \resumeItemListEnd
+
+      % \resumeSubheading
+      % {Software Engineer}{Oct 2016 -- Apr 2018}
+      % {RoboMQ}{Tysons, VA}
+      % \resumeItemListStart
+      %   \resumeItem{Wrote \textbf{backend} software that connected HR platforms to IT software}
+      %   \resumeItem{Deployed and maintained \textbf{software} and \textbf{infrastructure} on AWS and Google Cloud}
+      % \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Terraform, Typescript, Bash/Shell, SQL, KQL} \\
+     \textbf{Databases}{: Postgres, MySQL, DynamoDb, Redis, InfluxDB} \\
+     \textbf{DevOps/SRE}{: Distributed Systems, Incident response, On-Call Triage and RCA(Root Cause Analysis), Error Budgets, Observability, Scalability, Postmortem, Runbooks, Techincal Documentation, Automation, Cloud Security, Cloud Networking, Cost Control, MLOps} \\
+     \textbf{Tools and other Skills}{: Unix/Linux, Git, AWS, Azure, Docker, Datadog, Prometheus, Sentry, Loggly, CodePipelines, ServiceNow}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
